@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IM SORRY PRINCESS</title>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Marker Felt', cursive, sans-serif;
+  background-color: #fff0f5;
+}
+
+.hero {
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+}
+#sorry h1 {
+  margin-bottom: 16px;
+  font-size: clamp(2rem, 5vw, 4rem);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+#sorry p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #ffb6c1, #ff9aab);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(255, 154, 171, 0.4);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+button:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 154, 171, 0.6);
+}
+
+.cute-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 500px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.nav-btn {
+  text-decoration: none;
+  padding: 12px 25px;
+  background-color: white;
+  color: #ff6f91;
+  border: 3px solid #ffe4e8;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.2);
+}
+
+.nav-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 15px rgba(255, 182, 193, 0.4);
+  background-color: #fff0f5;
+}
+
+.nav-btn.active {
+  background: linear-gradient(135deg, #ffb6c1, #ff9aab);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 5px 15px rgba(255, 154, 171, 0.4);
+}
+</style>
+</head>
+<body>
+    <div class="hero">
+      <div id="sorry" class="hero-content">
+        <nav class="cute-nav">
+          <a href="index.html" class="nav-btn">🏠 Home</a>
+          <a href="read my heart.html" class="nav-btn active">💌 Read My Heart</a>
+          <a href="love letter.html" class="nav-btn">📝 Love Letter</a>
+          <a href="our memories.html" class="nav-btn">📸 Memories</a>
+          <a href="feedback.html" class="nav-btn">💬 Feedback</a>
+        </nav>
+        
+        <h1>IM SORRY PRINCESS</h1>
+        <p>For all the times I hurt you, for all the times I made you cry, 
+            for all the times I made you feel less than what you are, I am truly sorry. 
+            You deserve nothing but love and happiness, and I failed to give you that. 
+            Please forgive me for my mistakes and know that I will do everything 
+            to make it up to you.</p>
+          <button type="button" onclick="window.location.href='our memories.html'">Our Memories</button>
+      </div>
+    </div>
+
+
+</body>
+</html>

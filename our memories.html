@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Memories</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Marker Felt', cursive, sans-serif;
+    padding: 0 0 40px 0;
+    background-color: #fff0f5;
+    background-image: radial-gradient(#ffd1dc 3px, transparent 3px);
+    background-size: 30px 30px;
+  }
+
+  .cute-banner {
+    background-color: #ffb6c1;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 10px rgba(255, 182, 193, 0.5);
+    margin-bottom: 40px;
+    border-bottom: 3px dashed #ff9aab;
+  }
+
+  .page-title {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+  
+  .page-title h1 {
+    color: #ff6f91;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(255, 111, 145, 0.2);
+  }
+  
+  .page-title p {
+    color: #ff8fa3;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  section {
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    border: 3px solid #ffe4e8;
+    box-shadow: 0 10px 20px rgba(255, 182, 193, 0.2);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+  }
+
+  section:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(255, 182, 193, 0.4);
+  }
+  
+  section h2 {
+    margin-bottom: 15px;
+    color: #ff6f91;
+    border-bottom: 2px dashed #ffe4e8;
+    padding-bottom: 10px;
+  }
+  
+  section img,
+  section video,
+  section iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid #ffe4e8;
+    margin: 20px 0;
+    display: block;
+  }
+  
+  section iframe {
+    height: 400px;
+  }
+  
+  section p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
+
+  button {
+    padding: 15px 35px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #ffb6c1, #ff9aab);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 154, 171, 0.4);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  button:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 154, 171, 0.6);
+  }
+
+  .cute-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  .nav-btn {
+    text-decoration: none;
+    padding: 12px 25px;
+    background-color: white;
+    color: #ff6f91;
+    border: 3px solid #ffe4e8;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 10px rgba(255, 182, 193, 0.2);
+  }
+
+  .nav-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(255, 182, 193, 0.4);
+    background-color: #fff0f5;
+  }
+
+  .nav-btn.active {
+    background: linear-gradient(135deg, #ffb6c1, #ff9aab);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 5px 15px rgba(255, 154, 171, 0.4);
+  }
+
+  .footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+  }
+
+  footer p {
+    color: #666;
+    margin-bottom: 15px;
+  }
+</style>
+</head>
+<body>
+  <div class="cute-banner">
+    🎀 My Favorite Memories With You 🎀
+  </div>
+
+  <nav class="cute-nav">
+    <a href="index.html" class="nav-btn">🏠 Home</a>
+    <a href="read my heart.html" class="nav-btn">💌 Read My Heart</a>
+    <a href="love letter.html" class="nav-btn">📝 Love Letter</a>
+    <a href="our memories.html" class="nav-btn active">📸 Memories</a>
+    <a href="feedback.html" class="nav-btn">💬 Feedback</a>
+  </nav>
+
+  <div class="page-title">
+    <h1>Our Memories</h1>
+    <p>A collection of our beautiful moments together...</p>
+  </div>
+
+  <section id="FirstMet">
+    <h2>📍 First Met</h2>
+    <video controls src="1stmeet.mp4" type="video/quicktime">
+      Your browser does not support the video tag.
+    </video>
+    <p>I remeber the 1st day i saw u. Suddenly i felt so confidence and 
+        I straightly came to you and asked for your instagram. Even though 
+        I wasnt the person u were looking for that day, 
+        I knew from that moment that you were special.
+        That was the best day of my life and the day everything changed.    </p>
+  </section>
+
+  <section id="FirstDate">
+    <h2>📍 First Date</h2>
+    <img src="firstDj.jpg" alt="Our first date">
+    <p>Remember when we went to that tea avenue and you we stared at each other for hours?
+            I got you roses and i was bit late and i remember u were mad a bit but once i got there u smiled at me.
+            it felt like a dream. I will never forget that day and how happy you looked when you saw me. 
+            It was the second best day of my life.</p>
+  </section>
+
+
+  <section id="BestMemory">
+    <h2>📍 Best Memory</h2>
+    <img src="bday.jpg" alt="Birthday celebration">
+    <p>The best memory I have with you is your birthday. 
+        It was the most wonderful day ever and the most important day of my life. 
+        remember i got you a surprise gift? and how you reacted when you saw it?
+        After that we went to cinoman life for the dinner and u yelled at me for being late!
+        u were so excited to eat. After the lunch we went to take pics of you. ohhh it was a magical day!</p>
+  </section>
+
+  <section id="Cuteset Moment">
+    <h2>📍 Cutest Moment</h2>
+    <video controls src="Baech.mp4" type="video/quicktime">
+      Your browser does not support the video tag.
+    </video>
+    <p>Even the cutest memory I have with you is also on your birthday</p>
+  </section>
+
+    <section id="Our song">
+    <h2>📍 Our Song</h2>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube-nocookie.com/embed/fPNTC1VwrWc"
+      title="Our Song"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    <p>This song reminds me of you and us. Every time I hear it, I think of all the moments we've shared and the love we have.</p>
+  </section>
+
+    <section id="Car Meet date">
+    <h2>📍 Car Meet Date</h2>
+    <img src="IMG_9187.JPG" alt="Car date">
+    <p>Remember our car meetdate? It was so much fun! one of the best thing we did that we both loved</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Our Memories. All rights reserved.</p>
+    <div class="footer-buttons">
+      <button type="button" onclick="window.location.href='index.html'">🏠 Back to Home</button>
+      <button type="button" onclick="window.location.href='feedback.html'">💬 Leave Feedback</button>
+    </div>
+  </footer>
+</body>
+</html>

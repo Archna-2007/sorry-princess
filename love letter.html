@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love Letter</title>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Marker Felt', cursive, sans-serif;
+    background-color: #fff0f5;
+    background-image: radial-gradient(#ffd1dc 3px, transparent 3px);
+    background-size: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .cute-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+
+  .nav-btn {
+    text-decoration: none;
+    padding: 12px 25px;
+    background-color: white;
+    color: #ff6f91;
+    border: 3px solid #ffe4e8;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 10px rgba(255, 182, 193, 0.2);
+  }
+
+  .nav-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(255, 182, 193, 0.4);
+    background-color: #fff0f5;
+  }
+
+  .nav-btn.active {
+    background: linear-gradient(135deg, #ffb6c1, #ff9aab);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 5px 15px rgba(255, 154, 171, 0.4);
+  }
+
+  .letter-container {
+    background: white;
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid #ffe4e8;
+    box-shadow: 0 10px 20px rgba(255, 182, 193, 0.3);
+    background-image: repeating-linear-gradient(white, white 30px, #ffe4e8 31px);
+    line-height: 31px;
+    position: relative;
+  }
+
+  .letter-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    background-color: #ff9aab;
+  }
+
+  .letter-content {
+    color: #ff6f91;
+    font-size: 1.2rem;
+    padding-left: 20px;
+  }
+  
+  .signature {
+    text-align: right;
+    margin-top: 30px;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<nav class="cute-nav">
+  <a href="index.html" class="nav-btn">🏠 Home</a>
+  <a href="read my heart.html" class="nav-btn">💌 Read My Heart</a>
+  <a href="love letter.html" class="nav-btn active">📝 Love Letter</a>
+  <a href="our memories.html" class="nav-btn">📸 Memories</a>
+  <a href="feedback.html" class="nav-btn">💬 Feedback</a>
+</nav>
+
+<div class="letter-container">
+  <div class="letter-content">
+    My Dearest Princess,<br><br>
+    I know things have been heavy for you lately, and I wish I could be there next to you instead 
+    of being far away. If I could, I would take some of that weight off your shoulders so you can 
+    breathe easier and relax.<br><br>
+
+    You don't have to carry everything alone. It’s okay to feel tired. It’s okay to have days where 
+    everything feels like too much. You don’t always have to be strong, and please know that better 
+    days are ahead, baby.<br><br>
+
+    Even from far away, I’m here for you. On your good days, your bad days, and the days where you 
+    don’t even know what you’re feeling and are just confused, no matter what. You matter to me more 
+    than you can imagine, and seeing you hurt is hurting me too.<br><br>
+
+    A lot of people might not see how much you fight inside your own mind, but I do. I'm here for you. 
+    We don't need them. I have you and you have me. We have us.<br><br>
+
+    No matter how far apart we are, my love for you will never shrink, and my care for you will never fade. 
+    I miss you right now, I'm thinking about you, and I just want you to be okay. I want to be with you right 
+    now.<br><br>
+
+    So tonight, let's rest, and we can tackle studying tomorrow. Tomorrow is a new day, and you're not going 
+    to face it alone. I'm going to be with you every step of the way.<br><br>
+    
+    I’m here. Always.<br><br>
+    <div class="signature">
+        With all my love,<br>
+        Your Sweetheart &lt;3
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

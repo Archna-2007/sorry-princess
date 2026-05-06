@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback</title>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Marker Felt', cursive, sans-serif;
+    background-color: #fff0f5;
+    background-image: radial-gradient(#ffd1dc 3px, transparent 3px);
+    background-size: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .container {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 25px;
+    border: 3px solid #ffe4e8;
+    box-shadow: 0 10px 20px rgba(255, 182, 193, 0.2);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff6f91;
+    text-shadow: 2px 2px 4px rgba(255, 111, 145, 0.2);
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff8fa3;
+    font-weight: bold;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ffe4e8;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: inherit;
+  }
+
+  textarea {
+    min-height: 150px;
+    resize: vertical;
+  }
+
+  button {
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #ffb6c1, #ff9aab);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 154, 171, 0.4);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  button:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 154, 171, 0.6);
+  }
+
+  .back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ff8fa3;
+    font-weight: bold;
+  }
+
+  .cute-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  .nav-btn {
+    text-decoration: none;
+    padding: 12px 25px;
+    background-color: white;
+    color: #ff6f91;
+    border: 3px solid #ffe4e8;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 10px rgba(255, 182, 193, 0.2);
+  }
+
+  .nav-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(255, 182, 193, 0.4);
+    background-color: #fff0f5;
+  }
+
+  .nav-btn.active {
+    background: linear-gradient(135deg, #ffb6c1, #ff9aab);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 5px 15px rgba(255, 154, 171, 0.4);
+  }
+</style>
+</head>
+<body>
+
+<nav class="cute-nav">
+  <a href="index.html" class="nav-btn">🏠 Home</a>
+  <a href="read my heart.html" class="nav-btn">💌 Read My Heart</a>
+  <a href="love letter.html" class="nav-btn">📝 Love Letter</a>
+  <a href="our memories.html" class="nav-btn">📸 Memories</a>
+  <a href="feedback.html" class="nav-btn active">💬 Feedback</a>
+</nav>
+
+<div class="container">
+  <h1>Your Feedback</h1>
+  <p>I’d love to know what you think about this.</p>
+
+  <!-- Notice the action and method attributes added here -->
+  <form action="https://formsubmit.co/archanasoysa2007@gmail.com" method="POST">
+    
+    <!-- Added name="name" -->
+    <input type="text" name="name" placeholder="Your Name" required>
+
+    <!-- Added name="message" -->
+    <textarea name="message" placeholder="Write your thoughts here..." required></textarea>
+
+    <!-- Added name="rating" -->
+    <select name="rating" required>
+      <option value="">Rate this</option>
+      <option value="1 Star">⭐</option>
+      <option value="2 Stars">⭐⭐</option>
+      <option value="3 Stars">⭐⭐⭐</option>
+      <option value="4 Stars">⭐⭐⭐⭐</option>
+      <option value="5 Stars">⭐⭐⭐⭐⭐</option>
+    </select>
+
+    <!-- Optional: Add a hidden input to redirect back to your memories page after submitting -->
+    <input type="hidden" name="_next" value="our memories.html">
+    
+    <!-- Optional: Disable Captcha if you want a smoother experience -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <button type="submit">Send Feedback</button>
+  </form>
+
+  <a href="our memories.html" class="back-link">← Back to Memories</a>
+</div>
+
+</body>
+</html>
